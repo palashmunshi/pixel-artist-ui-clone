@@ -3,6 +3,7 @@ import { HeroSection } from '@/components/HeroSection';
 import { PhaseNavigation } from '@/components/PhaseNavigation';
 import { StrategicVision } from '@/components/StrategicVision';
 import { IntelligentAnalysis } from '@/components/IntelligentAnalysis';
+import { DeliverySimulation } from '@/components/DeliverySimulation';
 import { NavigationButtons } from '@/components/NavigationButtons';
 
 const Index = () => {
@@ -81,6 +82,7 @@ const Index = () => {
         
         {activeStep === 'strategic-vision' && <StrategicVision />}
         {activeStep === 'intelligent-analysis' && <IntelligentAnalysis />}
+        {activeStep === 'delivery-simulation' && <DeliverySimulation />}
         
         <NavigationButtons
           onPrevious={handlePreviousPhase}
