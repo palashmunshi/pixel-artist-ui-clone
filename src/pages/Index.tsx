@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Header } from '@/components/Header';
 import { HeroSection } from '@/components/HeroSection';
 import { PhaseNavigation } from '@/components/PhaseNavigation';
 import { StrategicVision } from '@/components/StrategicVision';
@@ -65,45 +66,48 @@ const Index = () => {
   };
 
   return (
-    <main className="bg-black flex flex-col overflow-hidden items-center pb-[30px]">
-      <HeroSection
-        title="Use Case 3: End-to-End Intelligent Architecture Journey"
-        subtitle="From Strategic Vision to Production Success"
-        phase="Phase 1 / 6"
-      />
-      
-      <section className="max-w-screen-xl bg-black z-10 min-h-[900px] mt-[-105px] w-full gap-6 p-6 rounded-[20px] max-md:max-w-full max-md:px-5">
-        <PhaseNavigation 
-          steps={phaseSteps} 
-          onStepClick={handleStepClick}
+    <main className="bg-black flex flex-col overflow-hidden min-h-screen">
+      <Header />
+      <div className="flex flex-col items-center pb-[30px]">
+        <HeroSection
+          title="Use Case 3: End-to-End Intelligent Architecture Journey"
+          subtitle="From Strategic Vision to Production Success"
+          phase="Phase 1 / 6"
         />
         
-        <StrategicVision />
-        
-        <NavigationButtons
-          onPrevious={handlePreviousPhase}
-          onNext={handleNextPhase}
-          centerText={{
-            main: "Intelligence Spine Platform",
-            sub: "Complete Architecture Journey Demo"
-          }}
-        />
-        
-        <div className="w-full text-xs text-gray-400 font-normal text-center leading-none mt-6 max-md:max-w-full">
-          <div className="text-xs font-normal leading-4 max-md:max-w-full">
-            Executive Demo • Complete Journey • CIO Vision → Agent Orchestration → Production Success
+        <section className="max-w-screen-xl bg-black z-10 min-h-[900px] mt-[-105px] w-full gap-6 p-6 rounded-[20px] max-md:max-w-full max-md:px-5">
+          <PhaseNavigation 
+            steps={phaseSteps} 
+            onStepClick={handleStepClick}
+          />
+          
+          <StrategicVision />
+          
+          <NavigationButtons
+            onPrevious={handlePreviousPhase}
+            onNext={handleNextPhase}
+            centerText={{
+              main: "Intelligence Spine Platform",
+              sub: "Complete Architecture Journey Demo"
+            }}
+          />
+          
+          <div className="w-full text-xs text-gray-400 font-normal text-center leading-none mt-6 max-md:max-w-full">
+            <div className="text-xs font-normal leading-4 max-md:max-w-full">
+              Executive Demo • Complete Journey • CIO Vision → Agent Orchestration → Production Success
+            </div>
           </div>
-        </div>
-      </section>
-      
-      <footer className="flex w-full max-w-[1256px] items-center gap-[40px_100px] text-sm text-white font-medium justify-between flex-wrap mt-[30px] max-md:max-w-full">
-        <div className="self-stretch my-auto">
-          Copyright © Genpact 2025. All rights reserved.
-        </div>
-        <div className="self-stretch my-auto">
-          Developed & maintained by AI Practice Team
-        </div>
-      </footer>
+        </section>
+        
+        <footer className="flex w-full max-w-[1256px] items-center gap-[40px_100px] text-sm text-white font-medium justify-between flex-wrap mt-[30px] max-md:max-w-full">
+          <div className="self-stretch my-auto">
+            Copyright © Genpact 2025. All rights reserved.
+          </div>
+          <div className="self-stretch my-auto">
+            Developed & maintained by AI Practice Team
+          </div>
+        </footer>
+      </div>
     </main>
   );
 };
