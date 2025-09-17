@@ -69,12 +69,17 @@ const Index = () => {
     }
   };
 
+  const getCurrentPhase = () => {
+    const currentIndex = phaseSteps.findIndex(step => step.id === activeStep);
+    return `Phase ${currentIndex + 1} / ${phaseSteps.length}`;
+  };
+
   return (
     <main className="bg-black flex flex-col overflow-hidden items-center pb-[30px]">
       <HeroSection
         title="Use Case 3: End-to-End Intelligent Architecture Journey"
         subtitle="From Strategic Vision to Production Success"
-        phase="Phase 1 / 6"
+        phase={getCurrentPhase()}
       />
       
       <section className="max-w-screen-xl bg-black z-10 min-h-[900px] mt-[-105px] w-full gap-6 p-6 rounded-[20px] max-md:max-w-full max-md:px-5">
