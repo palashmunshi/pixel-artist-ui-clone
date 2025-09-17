@@ -58,6 +58,18 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
+      fontSize: {
+        'page-header': ['1.5rem', { lineHeight: '2rem', fontWeight: '700' }],
+        'page-subtitle': ['1.125rem', { lineHeight: '1.75rem', fontWeight: '400' }],
+        'section-header': ['1.25rem', { lineHeight: '1.75rem', fontWeight: '700' }],
+        'section-subtitle': ['1rem', { lineHeight: '1.5rem', fontWeight: '400' }],
+        'card-header': ['1rem', { lineHeight: '1.5rem', fontWeight: '700' }],
+        'card-subheader': ['1rem', { lineHeight: '1.5rem', fontWeight: '600' }],
+        'body': ['1rem', { lineHeight: '1.5rem', fontWeight: '400' }],
+        'label': ['0.875rem', { lineHeight: '1.25rem', fontWeight: '500' }],
+        'micro': ['0.75rem', { lineHeight: '1rem', fontWeight: '400' }],
+        'question': ['1.125rem', { lineHeight: '1.75rem', fontWeight: '500' }],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
