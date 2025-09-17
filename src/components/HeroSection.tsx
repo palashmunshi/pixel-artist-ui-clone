@@ -37,7 +37,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ title, subtitle, phase
             <div className="absolute z-0 flex min-h-5 items-stretch translate-x-[0%] -translate-y-2/4 right-0 top-2/4" />
           </div>
         </div>
-        <div className="text-gray-500 text-right text-sm font-normal leading-none mt-3">
+        <div className="text-gray-500 text-right text-sm font-normal leading-none mt-3 relative z-20">
           {phase}
         </div>
       </div>
