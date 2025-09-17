@@ -19,16 +19,16 @@ export const InfoCard: React.FC<InfoCardProps> = ({ icon, title, items }) => {
             />
           </div>
         </div>
-        <div className="self-stretch text-right my-auto">
-          <div className="typography-card-subheader text-gray-950">
+        <div className="self-stretch text-base text-gray-950 font-semibold text-right my-auto">
+          <div className="text-base leading-6">
             {title}
           </div>
         </div>
       </header>
-      <div className="w-full gap-2 mt-4">
+      <div className="w-full text-sm text-gray-950 font-normal leading-none gap-2 mt-4">
         {items.map((item, index) => (
           <div key={index} className={`w-full ${index > 0 ? 'mt-2' : ''}`}>
-            <div className="typography-label text-gray-950">
+            <div className="text-sm font-normal leading-5">
               {item}
             </div>
           </div>

@@ -23,12 +23,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ title, subtitle, phase
         <div className="shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] flex w-full flex-col overflow-hidden items-stretch justify-center p-6 rounded-lg max-md:max-w-full max-md:px-5">
           <div className="items-start relative flex w-full max-md:max-w-full">
             <div className="z-0 min-w-60 w-[758px] max-md:max-w-full">
-              <h1 className="typography-page-header text-white max-md:max-w-full">
+              <h1 className="w-full text-3xl text-white font-bold leading-[1.2] max-md:max-w-full">
                 <div className="max-md:max-w-full">
                   {title}
                 </div>
               </h1>
-              <div className="typography-page-subtitle text-gray-200 mt-2 max-md:max-w-full">
+              <div className="w-full text-lg text-gray-200 font-normal leading-loose mt-2 max-md:max-w-full">
                 <div>
                   {subtitle}
                 </div>
@@ -37,7 +37,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ title, subtitle, phase
             <div className="absolute z-0 flex min-h-5 items-stretch translate-x-[0%] -translate-y-2/4 right-0 top-2/4" />
           </div>
         </div>
-        <div className="typography-label text-gray-500 text-right mt-3">
+        <div className="text-gray-500 text-right text-sm font-normal leading-none mt-3">
           {phase}
         </div>
       </div>
