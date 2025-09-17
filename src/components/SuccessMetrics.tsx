@@ -2,17 +2,13 @@ import React from 'react';
 
 export const SuccessMetrics: React.FC = () => {
   return (
-    <div className="flex w-full flex-col items-stretch justify-center max-md:max-w-full">
-      {/* Main Content Section */}
-      <section className="bg-[rgba(64,64,64,1)] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] border flex w-full flex-col overflow-hidden items-stretch justify-center p-8 rounded-[20px] border-[rgba(112,112,112,1)] border-solid max-md:max-w-full max-md:px-5">
-        {/* Header */}
-        <div className="flex w-full flex-col items-start justify-center mb-6 max-md:max-w-full">
-          <h2 className="text-white text-2xl font-bold leading-8 mb-2">Success Metrics</h2>
-          <p className="text-gray-300 text-base font-normal leading-6">End-to-End Transformation Results</p>
-        </div>
-
-        {/* Complete Transformation Success Card */}
-        <div className="bg-[rgba(80,80,80,1)] border border-[rgba(112,112,112,1)] border-solid rounded-lg p-6 mb-6 max-md:px-5">
+    <div className="space-y-8 mt-8">
+      <div className="text-left">
+        <h2 className="text-white text-4xl font-bold mb-2">Success Metrics</h2>
+        <p className="text-gray-300 text-xl">End-to-End Transformation Results</p>
+      </div>
+      {/* Complete Transformation Success Card */}
+      <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
           <div className="flex items-start gap-4">
             <div className="flex-shrink-0">
               <div className="w-8 h-8 bg-[#FFAD28] rounded flex items-center justify-center">
@@ -30,8 +26,8 @@ export const SuccessMetrics: React.FC = () => {
           </div>
         </div>
 
-        {/* False Positive Pattern Recognition Metrics */}
-        <div className="bg-[rgba(80,80,80,1)] border border-[rgba(112,112,112,1)] border-solid rounded-lg p-6 mb-6 max-md:px-5">
+      {/* False Positive Pattern Recognition Metrics */}
+      <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
           <div className="text-center mb-6">
             <h3 className="text-white text-lg font-semibold leading-6 mb-2">False Positive Pattern Recognition</h3>
           </div>
@@ -67,8 +63,8 @@ export const SuccessMetrics: React.FC = () => {
           </div>
         </div>
 
-        {/* Transformation Journey Success Metrics */}
-        <div className="bg-[rgba(80,80,80,1)] border border-[rgba(112,112,112,1)] border-solid rounded-lg p-6 mb-6 max-md:px-5">
+      {/* Transformation Journey Success Metrics */}
+      <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
           <h3 className="text-white text-lg font-semibold leading-6 mb-6">Transformation Journey Success Metrics</h3>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -120,10 +116,10 @@ export const SuccessMetrics: React.FC = () => {
           </div>
         </div>
 
-        {/* Comparison Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-          {/* Traditional Approach Projection */}
-          <div className="bg-[rgba(80,80,80,1)] border border-[rgba(112,112,112,1)] border-solid rounded-lg p-6 max-md:px-5">
+      {/* Comparison Section */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Traditional Approach Projection */}
+        <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
             <h3 className="text-white text-lg font-semibold leading-6 mb-4">Traditional Approach Projection</h3>
             <div className="space-y-3">
               <div>
@@ -149,8 +145,8 @@ export const SuccessMetrics: React.FC = () => {
             </div>
           </div>
 
-          {/* Intelligence Spine Actual Results */}
-          <div className="bg-[rgba(80,80,80,1)] border border-[rgba(112,112,112,1)] border-solid rounded-lg p-6 max-md:px-5">
+        {/* Intelligence Spine Actual Results */}
+        <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
             <h3 className="text-white text-lg font-semibold leading-6 mb-4">Intelligence Spine Actual Results</h3>
             <div className="space-y-3">
               <div>
@@ -177,8 +173,8 @@ export const SuccessMetrics: React.FC = () => {
           </div>
         </div>
 
-        {/* End-to-End Transformation Success */}
-        <div className="bg-[rgba(80,80,80,1)] border border-[rgba(112,112,112,1)] border-solid rounded-lg p-6 max-md:px-5">
+      {/* End-to-End Transformation Success */}
+      <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
           <h3 className="text-white text-lg font-semibold leading-6 mb-4">End-to-End Transformation Success</h3>
           <p className="text-gray-300 text-sm font-normal leading-5 mb-6">
             From CIO's strategic vision to production reality with Intelligence Spine guidance
@@ -205,7 +201,7 @@ export const SuccessMetrics: React.FC = () => {
             </p>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
