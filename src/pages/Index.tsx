@@ -5,6 +5,7 @@ import { StrategicVision } from '@/components/StrategicVision';
 import { IntelligentAnalysis } from '@/components/IntelligentAnalysis';
 import { DeliverySimulation } from '@/components/DeliverySimulation';
 import { FalsePositiveDetection } from '@/components/FalsePositiveDetection';
+import { SuccessMetrics } from '@/components/SuccessMetrics';
 import { NavigationButtons } from '@/components/NavigationButtons';
 
 const Index = () => {
@@ -85,6 +86,7 @@ const Index = () => {
         {activeStep === 'intelligent-analysis' && <IntelligentAnalysis />}
         {activeStep === 'delivery-simulation' && <DeliverySimulation />}
         {activeStep === 'false-positive-detection' && <FalsePositiveDetection />}
+        {activeStep === 'success-metrics' && <SuccessMetrics />}
         
         <NavigationButtons
           onPrevious={handlePreviousPhase}
