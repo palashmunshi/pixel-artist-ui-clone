@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Header } from '@/components/Header';
 import { HeroSection } from '@/components/HeroSection';
 import { PhaseNavigation } from '@/components/PhaseNavigation';
 import { StrategicVision } from '@/components/StrategicVision';
@@ -74,8 +75,14 @@ const Index = () => {
     return `Phase ${currentIndex + 1} / ${phaseSteps.length}`;
   };
 
+  const getCurrentIndex = () => {
+    return phaseSteps.findIndex(step => step.id === activeStep);
+  };
+
   return (
-    <main className="bg-black flex flex-col overflow-hidden items-center pb-[30px]">
+    <div className="bg-black min-h-screen flex flex-col">
+      <Header />
+      <main className="bg-black flex flex-col overflow-hidden items-center pb-[30px] flex-1">
       <HeroSection
         title="Use Case 3: End-to-End Intelligent Architecture Journey"
         subtitle="From Strategic Vision to Production Success"
@@ -98,6 +105,8 @@ const Index = () => {
         <NavigationButtons
           onPrevious={handlePreviousPhase}
           onNext={handleNextPhase}
+          isPreviousDisabled={getCurrentIndex() === 0}
+          isNextDisabled={getCurrentIndex() === phaseSteps.length - 1}
           centerText={{
             main: "Intelligence Spine Platform",
             sub: "Complete Architecture Journey Demo"
@@ -119,7 +128,8 @@ const Index = () => {
           Developed & maintained by AI Practice Team
         </div>
       </footer>
-    </main>
+      </main>
+    </div>
   );
 };
 

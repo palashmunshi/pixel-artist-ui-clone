@@ -3,6 +3,8 @@ import React from 'react';
 interface NavigationButtonsProps {
   onPrevious?: () => void;
   onNext?: () => void;
+  isPreviousDisabled?: boolean;
+  isNextDisabled?: boolean;
   centerText?: {
     main: string;
     sub: string;
@@ -12,13 +14,20 @@ interface NavigationButtonsProps {
 export const NavigationButtons: React.FC<NavigationButtonsProps> = ({ 
   onPrevious, 
   onNext, 
+  isPreviousDisabled = false,
+  isNextDisabled = false,
   centerText 
 }) => {
   return (
     <nav className="items-center flex w-full flex-wrap gap-[334.8px] mt-6 max-md:max-w-full">
       <button
-        onClick={onPrevious}
-        className="bg-[rgba(255,242,223,1)] self-stretch flex items-center my-auto px-6 py-3 rounded-lg max-md:px-5 hover:bg-[rgba(255,242,223,0.8)] transition-colors"
+        onClick={isPreviousDisabled ? undefined : onPrevious}
+        disabled={isPreviousDisabled}
+        className={`self-stretch flex items-center my-auto px-6 py-3 rounded-lg max-md:px-5 transition-colors ${
+          isPreviousDisabled 
+            ? 'bg-[rgba(255,242,223,0.3)] opacity-50 cursor-not-allowed' 
+            : 'bg-[rgba(255,242,223,1)] hover:bg-[rgba(255,242,223,0.8)]'
+        }`}
       >
         <div className="self-stretch flex min-h-5 flex-col w-7 my-auto pr-2">
           <div className="flex min-h-5 w-5 flex-col overflow-hidden items-stretch justify-center">
@@ -29,7 +38,9 @@ export const NavigationButtons: React.FC<NavigationButtonsProps> = ({
             />
           </div>
         </div>
-        <div className="text-[#996818] text-center text-base font-medium leading-6 self-stretch my-auto">
+        <div className={`text-center text-base font-medium leading-6 self-stretch my-auto ${
+          isPreviousDisabled ? 'text-[#996818]/50' : 'text-[#996818]'
+        }`}>
           Previous Phase
         </div>
       </button>
@@ -50,10 +61,17 @@ export const NavigationButtons: React.FC<NavigationButtonsProps> = ({
       )}
       
       <button
-        onClick={onNext}
-        className="items-center self-stretch flex grow shrink w-[123px] bg-[#FFAD28] my-auto pl-6 pr-5 py-3 rounded-lg max-md:pl-5 hover:bg-[#FF9A00] transition-colors"
+        onClick={isNextDisabled ? undefined : onNext}
+        disabled={isNextDisabled}
+        className={`items-center self-stretch flex grow shrink w-[123px] my-auto pl-6 pr-5 py-3 rounded-lg max-md:pl-5 transition-colors ${
+          isNextDisabled 
+            ? 'bg-[#FFAD28]/30 opacity-50 cursor-not-allowed' 
+            : 'bg-[#FFAD28] hover:bg-[#FF9A00]'
+        }`}
       >
-        <div className="text-white text-center text-base font-medium leading-6 self-stretch my-auto whitespace-nowrap">
+        <div className={`text-center text-base font-medium leading-6 self-stretch my-auto whitespace-nowrap ${
+          isNextDisabled ? 'text-white/50' : 'text-white'
+        }`}>
           Next Phase
         </div>
         <div className="self-stretch flex min-h-5 flex-col w-7 my-auto pl-2">
