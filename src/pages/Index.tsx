@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HeroSection } from '@/components/HeroSection';
 import { PhaseNavigation } from '@/components/PhaseNavigation';
 import { StrategicVision } from '@/components/StrategicVision';
 import { NavigationButtons } from '@/components/NavigationButtons';
+import { registerBuilderComponents } from '@/utils/builderIntegration';
 
 const Index = () => {
   const [activeStep, setActiveStep] = useState('strategic-vision');
+
+  // Register Builder components on mount
+  useEffect(() => {
+    registerBuilderComponents();
+  }, []);
+
+  // ... keep existing code (phase steps, handlers, etc.)
 
   const phaseSteps = [
     {
