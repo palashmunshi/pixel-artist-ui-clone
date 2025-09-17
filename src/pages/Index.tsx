@@ -1,54 +1,65 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HeroSection } from '@/components/HeroSection';
 import { PhaseNavigation } from '@/components/PhaseNavigation';
 import { StrategicVision } from '@/components/StrategicVision';
-import { IntelligentAnalysis } from '@/components/IntelligentAnalysis';
 import { NavigationButtons } from '@/components/NavigationButtons';
+import { registerBuilderComponents } from '@/utils/builderIntegration';
 
 const Index = () => {
   const [activeStep, setActiveStep] = useState('strategic-vision');
+
+  // Register Builder components on mount
+  useEffect(() => {
+    registerBuilderComponents();
+  }, []);
+
+  // ... keep existing code (phase steps, handlers, etc.)
 
   const phaseSteps = [
     {
       id: 'strategic-vision',
       title: 'Strategic Vision',
       icon: 'https://api.builder.io/api/v1/image/assets/bd1da15b35434b809217212e9a7671c3/d3e311e0deaf3c03c5a57683e9cedfef252846ef?placeholderIfAbsent=true',
-      isActive: activeStep === 'strategic-vision'
+      isActive: true
     },
     {
       id: 'intelligent-analysis',
       title: 'Intelligent Analysis',
       icon: 'https://api.builder.io/api/v1/image/assets/bd1da15b35434b809217212e9a7671c3/e4eaca950e40259170c6534a3743ff9fc4deab2e?placeholderIfAbsent=true',
-      isActive: activeStep === 'intelligent-analysis'
+      isActive: false
     },
     {
       id: 'delivery-simulation',
       title: 'Delivery Simulation',
       icon: 'https://api.builder.io/api/v1/image/assets/bd1da15b35434b809217212e9a7671c3/536af0c7f3376926b10c67f06e9b94125b32cf89?placeholderIfAbsent=true',
-      isActive: activeStep === 'delivery-simulation'
+      isActive: false
     },
     {
       id: 'false-positive-detection',
       title: 'False Positive Detection',
       icon: 'https://api.builder.io/api/v1/image/assets/bd1da15b35434b809217212e9a7671c3/86632aa8718e481e24596404a52243ba54bed26d?placeholderIfAbsent=true',
-      isActive: activeStep === 'false-positive-detection'
+      isActive: false
     },
     {
       id: 'agent-orchestration',
       title: 'Agent Orchestration',
       icon: 'https://api.builder.io/api/v1/image/assets/bd1da15b35434b809217212e9a7671c3/911dcf2b2272106a0dfb047fea6c45fcd8cd59ab?placeholderIfAbsent=true',
-      isActive: activeStep === 'agent-orchestration'
+      isActive: false
     },
     {
       id: 'success-metrics',
       title: 'Success Metrics',
       icon: 'https://api.builder.io/api/v1/image/assets/bd1da15b35434b809217212e9a7671c3/11500ef12dfb3237d5e9a3d944d66c2f293cce4f?placeholderIfAbsent=true',
-      isActive: activeStep === 'success-metrics'
+      isActive: false
     }
   ];
 
   const handleStepClick = (stepId: string) => {
     setActiveStep(stepId);
+    // Update active state for visual feedback
+    phaseSteps.forEach(step => {
+      step.isActive = step.id === stepId;
+    });
   };
 
   const handlePreviousPhase = () => {
@@ -75,8 +86,7 @@ const Index = () => {
           onStepClick={handleStepClick}
         />
         
-        {activeStep === 'strategic-vision' && <StrategicVision />}
-        {activeStep === 'intelligent-analysis' && <IntelligentAnalysis />}
+        <StrategicVision />
         
         <NavigationButtons
           onPrevious={handlePreviousPhase}
