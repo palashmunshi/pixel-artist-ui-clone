@@ -5,8 +5,8 @@ export const AgentOrchestration: React.FC = () => {
   return (
     <div className="space-y-8 mt-8">
       <div className="text-left">
-        <h2 className="text-white text-4xl font-bold mb-2">Agent Orchestration</h2>
-        <p className="text-gray-300 text-xl">Visual Architecture Solution Deployment</p>
+        <h2 className="text-white text-display font-bold mb-2">Agent Orchestration</h2>
+        <p className="text-gray-300 text-subheading">Visual Architecture Solution Deployment</p>
       </div>
 
       {/* Agent Playground Header */}
@@ -16,23 +16,23 @@ export const AgentOrchestration: React.FC = () => {
             <Network className="w-7 h-7 text-black" />
           </div>
           <div>
-            <h3 className="text-white text-2xl font-bold mb-2">Agent Playground: Visual Solution Architecture</h3>
-            <p className="text-gray-300 text-lg">Real-time agent orchestration for healthcare-native integration architecture</p>
+            <h3 className="text-white text-heading font-bold mb-2">Agent Playground: Visual Solution Architecture</h3>
+            <p className="text-gray-300 text-subheading">Real-time agent orchestration for healthcare-native integration architecture</p>
           </div>
         </div>
       </div>
 
       {/* Interactive Agent Orchestration */}
       <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
-        <h3 className="text-[#FFAD28] text-2xl font-bold mb-8">Interactive Agent Orchestration</h3>
+        <h3 className="text-[#FFAD28] text-heading font-bold mb-8">Interactive Agent Orchestration</h3>
         
         {/* First Flow */}
         <div className="mb-8">
           <div className="flex items-center justify-between gap-4 flex-wrap">
             <div className="bg-[rgba(60,62,59,1)] p-4 rounded-lg border border-gray-600 text-center min-w-[120px]">
               <Database className="w-6 h-6 text-blue-400 mx-auto mb-2" />
-              <div className="text-white font-semibold text-sm">SAP Legacy</div>
-              <div className="text-gray-400 text-xs mt-1">847 codes</div>
+              <div className="text-white font-semibold text-caption">SAP Legacy</div>
+              <div className="text-gray-400 text-label mt-1">847 codes</div>
             </div>
             
             <div className="flex items-center gap-2">
@@ -43,8 +43,8 @@ export const AgentOrchestration: React.FC = () => {
             
             <div className="bg-[rgba(60,62,59,1)] p-4 rounded-lg border border-green-500 text-center min-w-[120px]">
               <Activity className="w-6 h-6 text-green-400 mx-auto mb-2" />
-              <div className="text-white font-semibold text-sm">Healthcare Agent</div>
-              <div className="text-green-400 text-xs mt-1">Data Transform</div>
+              <div className="text-white font-semibold text-caption">Healthcare Agent</div>
+              <div className="text-green-400 text-label mt-1">Data Transform</div>
             </div>
             
             <div className="flex items-center gap-2">
@@ -55,8 +55,8 @@ export const AgentOrchestration: React.FC = () => {
             
             <div className="bg-[rgba(60,62,59,1)] p-4 rounded-lg border border-purple-500 text-center min-w-[120px]">
               <Cog className="w-6 h-6 text-purple-400 mx-auto mb-2" />
-              <div className="text-white font-semibold text-sm">Integration</div>
-              <div className="text-purple-400 text-xs mt-1">Orchestrator</div>
+              <div className="text-white font-semibold text-caption">Integration</div>
+              <div className="text-purple-400 text-label mt-1">Orchestrator</div>
             </div>
             
             <div className="flex items-center gap-2">
@@ -67,8 +67,8 @@ export const AgentOrchestration: React.FC = () => {
             
             <div className="bg-[rgba(60,62,59,1)] p-4 rounded-lg border border-green-500 text-center min-w-[120px]">
               <Users className="w-6 h-6 text-green-400 mx-auto mb-2" />
-              <div className="text-white font-semibold text-sm">ServiceNow</div>
-              <div className="text-green-400 text-xs mt-1">Platform</div>
+              <div className="text-white font-semibold text-caption">ServiceNow</div>
+              <div className="text-green-400 text-label mt-1">Platform</div>
             </div>
           </div>
         </div>
@@ -78,8 +78,8 @@ export const AgentOrchestration: React.FC = () => {
           <div className="flex items-center justify-between gap-4 flex-wrap">
             <div className="bg-[rgba(60,62,59,1)] p-4 rounded-lg border border-gray-600 text-center min-w-[120px]">
               <Database className="w-6 h-6 text-orange-400 mx-auto mb-2" />
-              <div className="text-white font-semibold text-sm">Kinaxis</div>
-              <div className="text-gray-400 text-xs mt-1">Supply Chain</div>
+              <div className="text-white font-semibold text-caption">Kinaxis</div>
+              <div className="text-gray-400 text-label mt-1">Supply Chain</div>
             </div>
             
             <div className="flex items-center gap-2">
@@ -90,8 +90,8 @@ export const AgentOrchestration: React.FC = () => {
             
             <div className="bg-[rgba(60,62,59,1)] p-4 rounded-lg border border-blue-500 text-center min-w-[120px]">
               <Activity className="w-6 h-6 text-blue-400 mx-auto mb-2" />
-              <div className="text-white font-semibold text-sm">Bridge Agent</div>
-              <div className="text-blue-400 text-xs mt-1">Field Mapping</div>
+              <div className="text-white font-semibold text-caption">Bridge Agent</div>
+              <div className="text-blue-400 text-label mt-1">Field Mapping</div>
             </div>
             
             <div className="flex items-center gap-2">
@@ -102,8 +102,8 @@ export const AgentOrchestration: React.FC = () => {
             
             <div className="bg-[rgba(60,62,59,1)] p-4 rounded-lg border border-purple-500 text-center min-w-[120px]">
               <Cog className="w-6 h-6 text-purple-400 mx-auto mb-2" />
-              <div className="text-white font-semibold text-sm">Merge Layer</div>
-              <div className="text-purple-400 text-xs mt-1">Unified Data</div>
+              <div className="text-white font-semibold text-caption">Merge Layer</div>
+              <div className="text-purple-400 text-label mt-1">Unified Data</div>
             </div>
             
             <div className="flex items-center gap-2">

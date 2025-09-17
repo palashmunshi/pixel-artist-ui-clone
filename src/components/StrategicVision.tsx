@@ -51,13 +51,13 @@ export const StrategicVision: React.FC = () => {
   return (
     <section className="shadow-[0_10px_15px_-3px_rgba(0,0,0,0.10),0_4px_6px_-4px_rgba(0,0,0,0.10)] bg-[#282A27] min-h-[600px] w-full overflow-hidden gap-6 mt-6 p-8 rounded-[20px] max-md:max-w-full max-md:px-5">
       <header className="w-full text-white gap-2 max-md:max-w-full">
-        <div className="w-full text-2xl font-bold leading-none max-md:max-w-full">
-          <h2 className="text-2xl font-bold leading-8 max-md:max-w-full">
+        <div className="w-full text-heading font-bold leading-none max-md:max-w-full">
+          <h2 className="text-heading font-bold leading-8 max-md:max-w-full">
             Strategic Vision
           </h2>
         </div>
-        <div className="w-full text-lg font-normal leading-loose mt-2 max-md:max-w-full">
-          <div className="text-lg font-normal leading-7 max-md:max-w-full">
+        <div className="w-full text-subheading font-normal leading-loose mt-2 max-md:max-w-full">
+          <div className="text-subheading font-normal leading-7 max-md:max-w-full">
             CIO's Napkin Architecture Sketch
           </div>
         </div>
@@ -76,13 +76,13 @@ export const StrategicVision: React.FC = () => {
               </div>
             </div>
             <div className="self-stretch min-w-60 text-right w-[507px] my-auto max-md:max-w-full">
-              <div className="w-full text-xl text-white font-bold leading-[1.4] max-md:max-w-full">
-                <h3 className="text-white text-xl font-bold leading-7">
+              <div className="w-full text-subheading text-white font-bold leading-[1.4] max-md:max-w-full">
+                <h3 className="text-white text-subheading font-bold leading-7">
                   Healthcare Digital Transformation Vision
                 </h3>
               </div>
-              <div className="w-full text-base text-white font-normal max-md:max-w-full">
-                <div className="text-base font-normal leading-6 max-md:max-w-full">
+              <div className="w-full text-body text-white font-normal max-md:max-w-full">
+                <div className="text-body font-normal leading-6 max-md:max-w-full">
                   "We need to modernize our entire ERP and clinical systems ecosystem"
                 </div>
               </div>
@@ -91,16 +91,16 @@ export const StrategicVision: React.FC = () => {
         </article>
         
         <article className="border border-gray-400 shadow-[0_10px_15px_-3px_rgba(0,0,0,0.10),0_4px_6px_-4px_rgba(0,0,0,0.10)] bg-[#4A4C4D] w-full overflow-hidden gap-6 mt-6 p-[34px] rounded-[20px] border-solid max-md:max-w-full max-md:px-5">
-          <header className="w-full text-base text-white font-bold text-center max-md:max-w-full">
-            <h3 className="text-white text-base leading-6 max-md:max-w-full">
+          <header className="w-full text-body text-white font-bold text-center max-md:max-w-full">
+            <h3 className="text-white text-body leading-6 max-md:max-w-full">
               CIO's Strategic Architecture Vision
             </h3>
           </header>
           
           <div className="justify-center items-stretch flex w-full gap-8 flex-wrap mt-6 max-md:max-w-full">
             <div className="min-w-60 text-center grow shrink w-[276px] gap-4">
-              <div className="w-full text-base text-[#FFB6B6] font-semibold">
-                <h4 className="text-base leading-6">
+              <div className="w-full text-body text-[#FFB6B6] font-semibold">
+                <h4 className="text-body leading-6">
                   Current State
                 </h4>
               </div>
@@ -114,8 +114,8 @@ export const StrategicVision: React.FC = () => {
             </div>
             
             <div className="min-w-60 grow shrink w-[277px] gap-4">
-              <div className="w-full text-base text-blue-300 font-semibold whitespace-nowrap text-center">
-                <h4 className="text-blue-300 text-base leading-6">
+              <div className="w-full text-body text-blue-300 font-semibold whitespace-nowrap text-center">
+                <h4 className="text-blue-300 text-body leading-6">
                   Transformation
                 </h4>
               </div>
@@ -127,7 +127,7 @@ export const StrategicVision: React.FC = () => {
                     alt="Intelligent Integration"
                   />
                   <div className="flex flex-col items-center mt-2">
-                    <div className="text-white text-sm font-medium leading-5">
+                    <div className="text-white text-caption font-medium leading-5">
                       Intelligent Integration
                     </div>
                   </div>
@@ -140,7 +140,7 @@ export const StrategicVision: React.FC = () => {
                       alt="Unified Data Layer"
                     />
                     <div className="flex flex-col items-center mt-2">
-                      <div className="text-white text-sm font-medium leading-5">
+                      <div className="text-white text-caption font-medium leading-5">
                         Unified Data Layer
                       </div>
                     </div>
@@ -150,8 +150,8 @@ export const StrategicVision: React.FC = () => {
             </div>
             
             <div className="min-w-60 text-center grow shrink w-[276px] gap-4">
-              <div className="w-full text-base text-green-200 font-semibold">
-                <h4 className="text-base leading-6">
+              <div className="w-full text-body text-green-200 font-semibold">
+                <h4 className="text-body leading-6">
                   Future State
                 </h4>
               </div>
@@ -172,8 +172,8 @@ export const StrategicVision: React.FC = () => {
           ))}
         </div>
         
-        <div className="w-full text-lg text-white font-medium leading-loose mt-6 max-md:max-w-full">
-          <div className="text-lg font-medium leading-7 max-md:max-w-full">
+        <div className="w-full text-subheading text-white font-medium leading-loose mt-6 max-md:max-w-full">
+          <div className="text-subheading font-medium leading-7 max-md:max-w-full">
             Question: How do we turn this vision into reality while avoiding common pitfalls?
           </div>
         </div>
