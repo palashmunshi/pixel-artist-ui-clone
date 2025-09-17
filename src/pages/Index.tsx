@@ -52,13 +52,17 @@ const Index = () => {
   };
 
   const handlePreviousPhase = () => {
-    console.log('Previous phase clicked');
-    // Implement navigation logic
+    const currentIndex = phaseSteps.findIndex(step => step.id === activeStep);
+    if (currentIndex > 0) {
+      setActiveStep(phaseSteps[currentIndex - 1].id);
+    }
   };
 
   const handleNextPhase = () => {
-    console.log('Next phase clicked');
-    // Implement navigation logic
+    const currentIndex = phaseSteps.findIndex(step => step.id === activeStep);
+    if (currentIndex < phaseSteps.length - 1) {
+      setActiveStep(phaseSteps[currentIndex + 1].id);
+    }
   };
 
   return (

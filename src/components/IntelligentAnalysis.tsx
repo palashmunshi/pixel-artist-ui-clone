@@ -85,7 +85,7 @@ export const IntelligentAnalysis: React.FC = () => {
       <div className="bg-[rgba(40,42,39,1)] p-6 rounded-[20px] border border-[rgba(112,112,112,1)]">
         <h3 className="text-[#FFAD28] text-2xl font-bold mb-6">Intelligence Spine Recommendations</h3>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
           <div className="text-center">
             <h4 className="text-white font-semibold text-base mb-2">Layered Architecture</h4>
             <p className="text-gray-300 text-sm">ServiceNow + Healthcare-native bridge</p>
@@ -97,10 +97,6 @@ export const IntelligentAnalysis: React.FC = () => {
           <div className="text-center">
             <h4 className="text-white font-semibold text-base mb-2">Continuous Monitoring</h4>
             <p className="text-gray-300 text-sm">Real-time architecture health tracking</p>
-          </div>
-          <div className="text-center">
-            <h4 className="text-white font-semibold text-base mb-2">Key Insight</h4>
-            <p className="text-gray-300 text-sm">Healthcare-specific patterns required</p>
           </div>
         </div>
 
