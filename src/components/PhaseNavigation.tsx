@@ -33,7 +33,7 @@ export const PhaseNavigation: React.FC<PhaseNavigationProps> = ({ steps, onStepC
                 alt={step.title}
               />
             </div>
-            <div className="text-white text-center text-label font-medium leading-4 truncate">
+            <div className="text-white text-center text-xs font-medium leading-4 truncate">
               {step.title}
             </div>
           </button>

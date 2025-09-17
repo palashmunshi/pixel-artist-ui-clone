@@ -58,14 +58,6 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
       },
-      fontSize: {
-        'display': 'var(--font-size-display)',
-        'heading': 'var(--font-size-heading)', 
-        'subheading': 'var(--font-size-subheading)',
-        'body': 'var(--font-size-body)',
-        'caption': 'var(--font-size-caption)',
-        'label': 'var(--font-size-label)',
-      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

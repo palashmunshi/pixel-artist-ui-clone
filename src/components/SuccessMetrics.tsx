@@ -4,8 +4,8 @@ export const SuccessMetrics: React.FC = () => {
   return (
     <div className="space-y-8 mt-8">
       <div className="text-left">
-        <h2 className="text-white text-display font-bold mb-2">Success Metrics</h2>
-        <p className="text-gray-300 text-subheading">End-to-End Transformation Results</p>
+        <h2 className="text-white text-4xl font-bold mb-2">Success Metrics</h2>
+        <p className="text-gray-300 text-xl">End-to-End Transformation Results</p>
       </div>
 
       {/* Complete Transformation Success Card */}
@@ -19,8 +19,8 @@ export const SuccessMetrics: React.FC = () => {
             </div>
           </div>
           <div className="flex-1">
-            <h3 className="text-white text-subheading font-semibold leading-6 mb-2">Complete Transformation Success</h3>
-            <p className="text-gray-300 text-caption font-normal leading-5">
+            <h3 className="text-white text-lg font-semibold leading-6 mb-2">Complete Transformation Success</h3>
+            <p className="text-gray-300 text-sm font-normal leading-5">
               From CIO's napkin sketch to live production in 14 months vs 18+ month traditional timeline
             </p>
           </div>
@@ -30,48 +30,48 @@ export const SuccessMetrics: React.FC = () => {
       {/* False Positive Pattern Recognition Metrics */}
       <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
         <div className="text-center mb-6">
-          <h3 className="text-white text-subheading font-semibold leading-6 mb-2">False Positive Pattern Recognition</h3>
+          <h3 className="text-white text-lg font-semibold leading-6 mb-2">False Positive Pattern Recognition</h3>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Total Savings */}
           <div className="text-center">
             <div className="text-white text-4xl font-bold leading-10 mb-2">$9.8M</div>
-            <div className="text-gray-300 text-caption font-normal leading-5">Total savings</div>
-            <div className="text-gray-400 text-label font-normal leading-4 mt-1">vs traditional approach</div>
+            <div className="text-gray-300 text-sm font-normal leading-5">Total savings</div>
+            <div className="text-gray-400 text-xs font-normal leading-4 mt-1">vs traditional approach</div>
           </div>
 
           {/* Months Delivery */}
           <div className="text-center">
             <div className="text-white text-4xl font-bold leading-10 mb-2">14</div>
-            <div className="text-gray-300 text-caption font-normal leading-5">Months delivery</div>
-            <div className="text-gray-400 text-label font-normal leading-4 mt-1">4 months ahead of schedule</div>
+            <div className="text-gray-300 text-sm font-normal leading-5">Months delivery</div>
+            <div className="text-gray-400 text-xs font-normal leading-4 mt-1">4 months ahead of schedule</div>
           </div>
 
           {/* System Compatibility */}
           <div className="text-center">
             <div className="text-white text-4xl font-bold leading-10 mb-2">95.2%</div>
-            <div className="text-gray-300 text-caption font-normal leading-5">System compatibility</div>
-            <div className="text-gray-400 text-label font-normal leading-4 mt-1">agent orchestration success</div>
+            <div className="text-gray-300 text-sm font-normal leading-5">System compatibility</div>
+            <div className="text-gray-400 text-xs font-normal leading-4 mt-1">agent orchestration success</div>
           </div>
 
           {/* User Adoption */}
           <div className="text-center">
             <div className="text-white text-4xl font-bold leading-10 mb-2">87%</div>
-            <div className="text-gray-300 text-caption font-normal leading-5">User adoption</div>
-            <div className="text-gray-400 text-label font-normal leading-4 mt-1">vs 34% industry average</div>
+            <div className="text-gray-300 text-sm font-normal leading-5">User adoption</div>
+            <div className="text-gray-400 text-xs font-normal leading-4 mt-1">vs 34% industry average</div>
           </div>
         </div>
       </div>
 
       {/* Transformation Journey Success Metrics */}
       <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
-        <h3 className="text-white text-subheading font-semibold leading-6 mb-6">Transformation Journey Success Metrics</h3>
+        <h3 className="text-white text-lg font-semibold leading-6 mb-6">Transformation Journey Success Metrics</h3>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Strategic Vision Achievement */}
           <div>
-            <h4 className="text-[#4ADE80] text-body font-semibold leading-6 mb-4">Strategic Vision Achievement</h4>
+            <h4 className="text-[#4ADE80] text-base font-semibold leading-6 mb-4">Strategic Vision Achievement</h4>
             <div className="space-y-2">
               <div className="flex items-center gap-3">
                 <span className="text-gray-300 text-sm font-normal leading-5">Unified patient experience:</span>
@@ -94,7 +94,7 @@ export const SuccessMetrics: React.FC = () => {
 
           {/* Intelligence Spine Impact */}
           <div>
-            <h4 className="text-[#FFAD28] text-body font-semibold leading-6 mb-4">Intelligence Spine Impact</h4>
+            <h4 className="text-[#FFAD28] text-base font-semibold leading-6 mb-4">Intelligence Spine Impact</h4>
             <div className="space-y-2">
               <div className="flex items-center gap-3">
                 <span className="text-gray-300 text-sm font-normal leading-5">False positive prevention:</span>
