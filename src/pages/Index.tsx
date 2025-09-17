@@ -42,7 +42,7 @@ const Index = () => {
     {
       id: 'success-metrics',
       title: 'Success Metrics',
-      icon: 'https://api.builder.io/api/v1/image/assets/bd1da15b35434b609217212e9a7671c3/11500ef12dfb3237d5e9a3d944d66c2f293cce4f?placeholderIfAbsent=true',
+      icon: 'https://api.builder.io/api/v1/image/assets/bd1da15b35434b809217212e9a7671c3/11500ef12dfb3237d5e9a3d944d66c2f293cce4f?placeholderIfAbsent=true',
       isActive: activeStep === 'success-metrics'
     }
   ];

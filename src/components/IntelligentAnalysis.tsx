@@ -4,22 +4,22 @@ export const IntelligentAnalysis: React.FC = () => {
   return (
     <div className="space-y-6 mt-6">
       {/* Header Section */}
-      <div className="text-center mb-8">
-        <h2 className="text-white text-4xl font-bold mb-2">Intelligent Analysis</h2>
-        <p className="text-gray-300 text-lg">Architecture Risk Assessment & Optimization</p>
+      <div className="mb-8">
+        <h2 className="text-white text-3xl font-bold mb-2">Intelligent Analysis</h2>
+        <p className="text-gray-300">Architecture Risk Assessment & Optimization</p>
       </div>
 
       {/* Intelligence Spine Analysis Card */}
       <div className="bg-[rgba(40,42,39,1)] p-6 rounded-[20px] border border-[rgba(112,112,112,1)] mb-6">
-        <div className="flex items-start gap-4">
+        <div className="flex items-center gap-4">
           <img 
             src="https://api.builder.io/api/v1/image/assets/TEMP/f8fb7e782ef4a7a077608b758cd1a58fd05f0fc0?width=64" 
             alt="Intelligence Spine Analysis" 
-            className="w-16 h-16 flex-shrink-0"
+            className="w-12 h-12 flex-shrink-0"
           />
           <div>
-            <h3 className="text-[#FFAD28] text-2xl font-bold mb-2">Intelligence Spine Architecture Analysis</h3>
-            <p className="text-gray-300 text-lg">Analyzing CIO vision against healthcare domain knowledge and historical patterns.</p>
+            <h3 className="text-[#FFAD28] text-xl font-bold mb-1">Intelligence Spine Architecture Analysis</h3>
+            <p className="text-gray-300">Analyzing CIO vision against healthcare domain knowledge and historical patterns.</p>
           </div>
         </div>
       </div>
