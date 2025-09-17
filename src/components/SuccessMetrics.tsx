@@ -68,7 +68,7 @@ export const SuccessMetrics: React.FC = () => {
         </div>
 
         {/* Transformation Journey Success Metrics */}
-        <div className="bg-[rgba(80,80,80,1)] border border-[rgba(112,112,112,1)] border-solid rounded-lg p-6 max-md:px-5">
+        <div className="bg-[rgba(80,80,80,1)] border border-[rgba(112,112,112,1)] border-solid rounded-lg p-6 mb-6 max-md:px-5">
           <h3 className="text-white text-lg font-semibold leading-6 mb-6">Transformation Journey Success Metrics</h3>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -79,6 +79,18 @@ export const SuccessMetrics: React.FC = () => {
                 <div className="flex items-center gap-3">
                   <span className="text-gray-300 text-sm font-normal leading-5">Unified patient experience:</span>
                   <span className="text-[#4ADE80] text-sm font-semibold leading-5">Achieved</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-gray-300 text-sm font-normal leading-5">Operational efficiency:</span>
+                  <span className="text-[#4ADE80] text-sm font-semibold leading-5">+34% improvement</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-gray-300 text-sm font-normal leading-5">Cost reduction:</span>
+                  <span className="text-[#4ADE80] text-sm font-semibold leading-5">$9.8M savings</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-gray-300 text-sm font-normal leading-5">Regulatory compliance:</span>
+                  <span className="text-[#4ADE80] text-sm font-semibold leading-5">Full compliance</span>
                 </div>
               </div>
             </div>
@@ -91,8 +103,106 @@ export const SuccessMetrics: React.FC = () => {
                   <span className="text-gray-300 text-sm font-normal leading-5">False positive prevention:</span>
                   <span className="text-[#FFAD28] text-sm font-semibold leading-5">$8.6M saved</span>
                 </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-gray-300 text-sm font-normal leading-5">Architecture optimization:</span>
+                  <span className="text-[#FFAD28] text-sm font-semibold leading-5">95.2% compatibility</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-gray-300 text-sm font-normal leading-5">Risk mitigation:</span>
+                  <span className="text-[#FFAD28] text-sm font-semibold leading-5">Zero major issues</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-gray-300 text-sm font-normal leading-5">Delivery acceleration:</span>
+                  <span className="text-[#FFAD28] text-sm font-semibold leading-5">4 months early</span>
+                </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Comparison Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+          {/* Traditional Approach Projection */}
+          <div className="bg-[rgba(80,80,80,1)] border border-[rgba(112,112,112,1)] border-solid rounded-lg p-6 max-md:px-5">
+            <h3 className="text-white text-lg font-semibold leading-6 mb-4">Traditional Approach Projection</h3>
+            <div className="space-y-3">
+              <div>
+                <span className="text-gray-300 text-sm font-medium">Timeline:</span>
+                <div className="text-white text-sm mt-1">18-24 months</div>
+              </div>
+              <div>
+                <span className="text-gray-300 text-sm font-medium">Budget:</span>
+                <div className="text-white text-sm mt-1">$18.5M+ (54% overrun)</div>
+              </div>
+              <div>
+                <span className="text-gray-300 text-sm font-medium">Success probability:</span>
+                <div className="text-white text-sm mt-1">23%</div>
+              </div>
+              <div>
+                <span className="text-gray-300 text-sm font-medium">User adoption:</span>
+                <div className="text-white text-sm mt-1">34%</div>
+              </div>
+              <div>
+                <span className="text-gray-300 text-sm font-medium">Crisis events:</span>
+                <div className="text-white text-sm mt-1">3-4 major issues</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Intelligence Spine Actual Results */}
+          <div className="bg-[rgba(80,80,80,1)] border border-[rgba(112,112,112,1)] border-solid rounded-lg p-6 max-md:px-5">
+            <h3 className="text-white text-lg font-semibold leading-6 mb-4">Intelligence Spine Actual Results</h3>
+            <div className="space-y-3">
+              <div>
+                <span className="text-gray-300 text-sm font-medium">Timeline:</span>
+                <div className="text-[#4ADE80] text-sm mt-1 font-semibold">14 months</div>
+              </div>
+              <div>
+                <span className="text-gray-300 text-sm font-medium">Budget:</span>
+                <div className="text-[#4ADE80] text-sm mt-1 font-semibold">$10.8M (10% under)</div>
+              </div>
+              <div>
+                <span className="text-gray-300 text-sm font-medium">Success achievement:</span>
+                <div className="text-[#4ADE80] text-sm mt-1 font-semibold">Full success</div>
+              </div>
+              <div>
+                <span className="text-gray-300 text-sm font-medium">User adoption:</span>
+                <div className="text-[#4ADE80] text-sm mt-1 font-semibold">87%</div>
+              </div>
+              <div>
+                <span className="text-gray-300 text-sm font-medium">Crisis prevention:</span>
+                <div className="text-[#4ADE80] text-sm mt-1 font-semibold">Zero major issues</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* End-to-End Transformation Success */}
+        <div className="bg-[rgba(80,80,80,1)] border border-[rgba(112,112,112,1)] border-solid rounded-lg p-6 max-md:px-5">
+          <h3 className="text-white text-lg font-semibold leading-6 mb-4">End-to-End Transformation Success</h3>
+          <p className="text-gray-300 text-sm font-normal leading-5 mb-6">
+            From CIO's strategic vision to production reality with Intelligence Spine guidance
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div>
+              <div className="text-white text-4xl font-bold leading-10 mb-2">$9.8M</div>
+              <div className="text-gray-300 text-sm font-normal leading-5">Total savings</div>
+            </div>
+            <div>
+              <div className="text-white text-4xl font-bold leading-10 mb-2">14 mo</div>
+              <div className="text-gray-300 text-sm font-normal leading-5">Vision to Reality</div>
+            </div>
+            <div>
+              <div className="text-white text-4xl font-bold leading-10 mb-2">100%</div>
+              <div className="text-gray-300 text-sm font-normal leading-5">Strategic Goals Met</div>
+            </div>
+          </div>
+          
+          <div className="mt-6 text-center">
+            <p className="text-gray-400 text-xs font-normal leading-4">
+              Executive Demo • Complete Journey • CIO Vision → Agent Orchestration → Production Success
+            </p>
           </div>
         </div>
       </section>
