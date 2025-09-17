@@ -53,7 +53,7 @@ export const NavigationButtons: React.FC<NavigationButtonsProps> = ({
         onClick={onNext}
         className="items-center self-stretch flex grow shrink w-[123px] bg-[#FFAD28] my-auto pl-6 pr-5 py-3 rounded-lg max-md:pl-5 hover:bg-[#FF9A00] transition-colors"
       >
-        <div className="text-white text-center text-base font-medium leading-6 self-stretch my-auto">
+        <div className="text-white text-center text-base font-medium leading-6 self-stretch my-auto whitespace-nowrap">
           Next Phase
         </div>
         <div className="self-stretch flex min-h-5 flex-col w-7 my-auto pl-2">
