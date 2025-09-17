@@ -1,20 +1,23 @@
 import React from 'react';
+import { User } from 'lucide-react';
 
 export const Header: React.FC = () => {
   return (
     <header className="w-full bg-[#2A2A2A] border-b border-gray-800 px-6 py-4 flex items-center justify-between">
       <div className="flex items-center gap-3">
-        <div className="w-8 h-8 bg-white rounded-sm flex items-center justify-center">
-          <div className="w-6 h-6 border-2 border-gray-800 rounded-sm transform rotate-12"></div>
+        <div className="w-8 h-8 relative">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 8L16 4L24 8V16L16 20L8 16V8Z" fill="white" stroke="white" strokeWidth="0.5"/>
+            <path d="M8 16L16 12L24 16V24L16 28L8 24V16Z" fill="white" fillOpacity="0.7" stroke="white" strokeWidth="0.5"/>
+            <path d="M16 4V12M16 12L24 16M16 12L8 16" stroke="#2A2A2A" strokeWidth="0.5"/>
+          </svg>
         </div>
         <span className="text-white font-semibold text-lg">genpact</span>
         <span className="text-orange-400 font-normal text-lg italic">on it</span>
       </div>
       
       <div className="w-10 h-10 bg-orange-400 rounded-full flex items-center justify-center">
-        <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-        </svg>
+        <User className="w-5 h-5 text-white" />
       </div>
     </header>
   );
