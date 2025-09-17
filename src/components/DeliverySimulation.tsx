@@ -2,24 +2,15 @@ import React from 'react';
 
 export const DeliverySimulation: React.FC = () => {
   return (
-    <section className="shadow-[0_10px_15px_-3px_rgba(0,0,0,0.10),0_4px_6px_-4px_rgba(0,0,0,0.10)] bg-[#282A27] min-h-[600px] w-full overflow-hidden gap-6 mt-6 p-8 rounded-[20px] max-md:max-w-full max-md:px-5">
-      <header className="w-full text-white gap-2 max-md:max-w-full">
-        <div className="w-full text-2xl font-bold leading-none max-md:max-w-full">
-          <h2 className="text-2xl font-bold leading-8 max-md:max-w-full">
-            Delivery Simulation
-          </h2>
-        </div>
-        <div className="w-full text-lg font-normal leading-loose mt-2 max-md:max-w-full">
-          <div className="text-lg font-normal leading-7 max-md:max-w-full">
-            Predictive Modeling of Implementation Journey
-          </div>
-        </div>
-      </header>
-      
-      <div className="w-full gap-6 mt-6 max-md:max-w-full">
+    <div className="space-y-8 mt-8">
+      {/* Main Header */}
+      <div className="text-left">
+        <h2 className="text-white text-4xl font-bold mb-2">Delivery Simulation</h2>
+        <p className="text-gray-300 text-xl">Predictive Modeling of Implementation Journey</p>
+      </div>
 
-        {/* Delivery Simulation Engine */}
-        <article className="items-stretch border border-gray-400 flex w-full flex-col justify-center p-[26px] rounded-[20px] border-solid max-md:max-w-full max-md:px-5">
+      {/* Delivery Simulation Engine */}
+      <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
         <div className="flex items-start gap-4">
           <div className="w-12 h-12 bg-[#FFAD28] rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
             <img
@@ -32,11 +23,11 @@ export const DeliverySimulation: React.FC = () => {
             <h3 className="text-white text-2xl font-bold mb-2">Delivery Simulation Engine</h3>
             <p className="text-gray-300 text-lg">Modeling 18-month implementation journey with risk prediction and mitigation</p>
           </div>
-          </div>
-        </article>
+        </div>
+      </div>
 
-        {/* Implementation Timeline Simulation */}
-        <article className="border border-gray-400 shadow-[0_10px_15px_-3px_rgba(0,0,0,0.10),0_4px_6px_-4px_rgba(0,0,0,0.10)] bg-[#4A4C4D] w-full overflow-hidden gap-6 mt-6 p-[34px] rounded-[20px] border-solid max-md:max-w-full max-md:px-5">
+      {/* Implementation Timeline Simulation */}
+      <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
         <h3 className="text-[#FFAD28] text-2xl font-bold mb-8">Implementation Timeline Simulation</h3>
         
         <div className="bg-[rgba(60,62,59,1)] rounded-[12px] p-6">
@@ -78,11 +69,11 @@ export const DeliverySimulation: React.FC = () => {
               </tr>
             </tbody>
           </table>
-          </div>
-        </article>
+        </div>
+      </div>
 
-        {/* Success Probability Modeling */}
-        <article className="border border-gray-400 shadow-[0_10px_15px_-3px_rgba(0,0,0,0.10),0_4px_6px_-4px_rgba(0,0,0,0.10)] bg-[#4A4C4D] w-full overflow-hidden gap-6 mt-6 p-[34px] rounded-[20px] border-solid max-md:max-w-full max-md:px-5">
+      {/* Success Probability Modeling */}
+      <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
         <h3 className="text-[#FFAD28] text-2xl font-bold mb-8">Success Probability Modeling</h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
@@ -101,11 +92,11 @@ export const DeliverySimulation: React.FC = () => {
         <div className="bg-[#FFAD28] p-6 rounded-[12px]">
           <h4 className="text-black font-bold text-xl mb-3">Key Factors:</h4>
           <p className="text-black text-lg">Healthcare-native agents, visual architecture modeling, continuous risk monitoring</p>
-          </div>
-        </article>
+        </div>
+      </div>
 
-        {/* Cost-Benefit Simulation */}
-        <article className="border border-gray-400 shadow-[0_10px_15px_-3px_rgba(0,0,0,0.10),0_4px_6px_-4px_rgba(0,0,0,0.10)] bg-[#4A4C4D] w-full overflow-hidden gap-6 mt-6 p-[34px] rounded-[20px] border-solid max-md:max-w-full max-md:px-5">
+      {/* Cost-Benefit Simulation */}
+      <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
         <h3 className="text-[#FFAD28] text-2xl font-bold mb-8">Cost-Benefit Simulation</h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
@@ -128,9 +119,8 @@ export const DeliverySimulation: React.FC = () => {
             <h4 className="text-white font-bold text-xl mb-4">ROI Acceleration:</h4>
             <div className="text-2xl font-bold text-white">18 months vs 4+ years payback</div>
           </div>
-          </div>
-        </article>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
