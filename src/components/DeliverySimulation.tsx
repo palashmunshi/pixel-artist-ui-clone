@@ -30,45 +30,92 @@ export const DeliverySimulation: React.FC = () => {
       <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
         <h3 className="text-[#FFAD28] text-2xl font-bold mb-8">Implementation Timeline Simulation</h3>
         
-        <div className="bg-[rgba(60,62,59,1)] rounded-[12px] p-6">
-          <table className="w-full">
-            <thead>
-              <tr className="border-b border-gray-600">
-                <th className="text-white text-left py-4 px-4 font-bold text-lg">Phase</th>
-                <th className="text-white text-center py-4 px-4 font-bold text-lg">Months 1-3</th>
-                <th className="text-white text-center py-4 px-4 font-bold text-lg">Months 4-9</th>
-                <th className="text-white text-center py-4 px-4 font-bold text-lg">Months 10-15</th>
-                <th className="text-white text-center py-4 px-4 font-bold text-lg">Months 16-18</th>
-                <th className="text-white text-center py-4 px-4 font-bold text-lg">Risk Level</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="border-b border-gray-700">
-                <td className="text-white py-4 px-4 font-semibold">Foundation</td>
-                <td className="text-gray-300 py-4 px-4 text-center">ServiceNow ITSM</td>
-                <td className="text-gray-500 py-4 px-4 text-center">-</td>
-                <td className="text-gray-500 py-4 px-4 text-center">-</td>
-                <td className="text-gray-500 py-4 px-4 text-center">-</td>
-                <td className="text-green-400 py-4 px-4 text-center font-semibold">Low</td>
-              </tr>
-              <tr className="border-b border-gray-700">
-                <td className="text-white py-4 px-4 font-semibold">Foundation</td>
-                <td className="text-gray-500 py-4 px-4 text-center">-</td>
-                <td className="text-gray-300 py-4 px-4 text-center">Healthcare Agents</td>
-                <td className="text-gray-300 py-4 px-4 text-center">SAP Bridge</td>
-                <td className="text-gray-500 py-4 px-4 text-center">-</td>
-                <td className="text-yellow-400 py-4 px-4 text-center font-semibold">Medium</td>
-              </tr>
-              <tr>
-                <td className="text-white py-4 px-4 font-semibold">Foundation</td>
-                <td className="text-gray-500 py-4 px-4 text-center">-</td>
-                <td className="text-gray-500 py-4 px-4 text-center">-</td>
-                <td className="text-gray-300 py-4 px-4 text-center">Workflow Integration</td>
-                <td className="text-gray-300 py-4 px-4 text-center">Go-Live</td>
-                <td className="text-red-400 py-4 px-4 text-center font-semibold">High</td>
-              </tr>
-            </tbody>
-          </table>
+        {/* Header Row */}
+        <div className="grid grid-cols-6 gap-4 mb-6">
+          <div className="bg-[rgba(60,62,59,1)] p-4 rounded-lg text-center">
+            <div className="text-white font-bold text-lg">Phase</div>
+          </div>
+          <div className="bg-[rgba(60,62,59,1)] p-4 rounded-lg text-center">
+            <div className="text-white font-bold text-lg">Months 1-3</div>
+          </div>
+          <div className="bg-[rgba(60,62,59,1)] p-4 rounded-lg text-center">
+            <div className="text-white font-bold text-lg">Months 4-9</div>
+          </div>
+          <div className="bg-[rgba(60,62,59,1)] p-4 rounded-lg text-center">
+            <div className="text-white font-bold text-lg">Months 10-15</div>
+          </div>
+          <div className="bg-[rgba(60,62,59,1)] p-4 rounded-lg text-center">
+            <div className="text-white font-bold text-lg">Months 16-18</div>
+          </div>
+          <div className="bg-[rgba(60,62,59,1)] p-4 rounded-lg text-center">
+            <div className="text-white font-bold text-lg">Risk Level</div>
+          </div>
+        </div>
+
+        {/* Row 1 */}
+        <div className="grid grid-cols-6 gap-4 mb-4">
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-white font-semibold">Foundation</div>
+          </div>
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-gray-300">ServiceNow ITSM</div>
+          </div>
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-gray-500">-</div>
+          </div>
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-gray-500">-</div>
+          </div>
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-gray-500">-</div>
+          </div>
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-green-400 font-semibold">Low</div>
+          </div>
+        </div>
+
+        {/* Row 2 */}
+        <div className="grid grid-cols-6 gap-4 mb-4">
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-white font-semibold">Foundation</div>
+          </div>
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-gray-500">-</div>
+          </div>
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-gray-300">Healthcare Agents</div>
+          </div>
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-gray-300">SAP Bridge</div>
+          </div>
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-gray-500">-</div>
+          </div>
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-yellow-400 font-semibold">Medium</div>
+          </div>
+        </div>
+
+        {/* Row 3 */}
+        <div className="grid grid-cols-6 gap-4">
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-white font-semibold">Foundation</div>
+          </div>
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-gray-500">-</div>
+          </div>
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-gray-500">-</div>
+          </div>
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-gray-300">Workflow Integration</div>
+          </div>
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-gray-300">Go-Live</div>
+          </div>
+          <div className="bg-[rgba(80,82,79,1)] p-4 rounded-lg text-center">
+            <div className="text-red-400 font-semibold">High</div>
+          </div>
         </div>
       </div>
 
