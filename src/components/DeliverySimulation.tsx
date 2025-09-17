@@ -30,62 +30,45 @@ export const DeliverySimulation: React.FC = () => {
       <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
         <h3 className="text-[#FFAD28] text-2xl font-bold mb-8">Implementation Timeline Simulation</h3>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {/* Months 1-3 */}
-          <div className="space-y-4">
-            <h4 className="text-white font-bold text-lg text-center mb-4">Months 1-3</h4>
-            <div className="bg-green-500 p-4 rounded-lg">
-              <div className="text-white font-semibold text-sm mb-1">Foundation</div>
-              <div className="text-white text-sm">ServiceNow ITSM</div>
-            </div>
-          </div>
-
-          {/* Months 4-9 */}
-          <div className="space-y-4">
-            <h4 className="text-white font-bold text-lg text-center mb-4">Months 4-9</h4>
-            <div className="bg-yellow-500 p-4 rounded-lg">
-              <div className="text-white font-semibold text-sm mb-1">Extension</div>
-              <div className="text-white text-sm">Healthcare Agents</div>
-            </div>
-          </div>
-
-          {/* Months 10-15 */}
-          <div className="space-y-4">
-            <h4 className="text-white font-bold text-lg text-center mb-4">Months 10-15</h4>
-            <div className="bg-orange-500 p-4 rounded-lg">
-              <div className="text-white font-semibold text-sm mb-1">Integration</div>
-              <div className="text-white text-sm">SAP Bridge</div>
-            </div>
-            <div className="bg-red-500 p-4 rounded-lg">
-              <div className="text-white font-semibold text-sm mb-1">Advanced</div>
-              <div className="text-white text-sm">Workflow Integration</div>
-            </div>
-          </div>
-
-          {/* Months 16-18 */}
-          <div className="space-y-4">
-            <h4 className="text-white font-bold text-lg text-center mb-4">Months 16-18</h4>
-            <div className="bg-purple-500 p-4 rounded-lg">
-              <div className="text-white font-semibold text-sm mb-1">Launch</div>
-              <div className="text-white text-sm">Go-Live</div>
-            </div>
-          </div>
-        </div>
-
-        {/* Risk Level Legend */}
-        <div className="mt-8 flex justify-center space-x-8">
-          <div className="flex items-center space-x-2">
-            <div className="w-4 h-4 bg-green-500 rounded"></div>
-            <span className="text-green-400 font-semibold">Low Risk</span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <div className="w-4 h-4 bg-yellow-500 rounded"></div>
-            <span className="text-yellow-400 font-semibold">Medium Risk</span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <div className="w-4 h-4 bg-red-500 rounded"></div>
-            <span className="text-red-400 font-semibold">High Risk</span>
-          </div>
+        <div className="bg-[rgba(60,62,59,1)] rounded-[12px] p-6">
+          <table className="w-full">
+            <thead>
+              <tr className="border-b border-gray-600">
+                <th className="text-white text-left py-4 px-4 font-bold text-lg">Phase</th>
+                <th className="text-white text-center py-4 px-4 font-bold text-lg">Months 1-3</th>
+                <th className="text-white text-center py-4 px-4 font-bold text-lg">Months 4-9</th>
+                <th className="text-white text-center py-4 px-4 font-bold text-lg">Months 10-15</th>
+                <th className="text-white text-center py-4 px-4 font-bold text-lg">Months 16-18</th>
+                <th className="text-white text-center py-4 px-4 font-bold text-lg">Risk Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-gray-700">
+                <td className="text-white py-4 px-4 font-semibold">Foundation</td>
+                <td className="text-gray-300 py-4 px-4 text-center">ServiceNow ITSM</td>
+                <td className="text-gray-500 py-4 px-4 text-center">-</td>
+                <td className="text-gray-500 py-4 px-4 text-center">-</td>
+                <td className="text-gray-500 py-4 px-4 text-center">-</td>
+                <td className="text-green-400 py-4 px-4 text-center font-semibold">Low</td>
+              </tr>
+              <tr className="border-b border-gray-700">
+                <td className="text-white py-4 px-4 font-semibold">Foundation</td>
+                <td className="text-gray-500 py-4 px-4 text-center">-</td>
+                <td className="text-gray-300 py-4 px-4 text-center">Healthcare Agents</td>
+                <td className="text-gray-300 py-4 px-4 text-center">SAP Bridge</td>
+                <td className="text-gray-500 py-4 px-4 text-center">-</td>
+                <td className="text-yellow-400 py-4 px-4 text-center font-semibold">Medium</td>
+              </tr>
+              <tr>
+                <td className="text-white py-4 px-4 font-semibold">Foundation</td>
+                <td className="text-gray-500 py-4 px-4 text-center">-</td>
+                <td className="text-gray-500 py-4 px-4 text-center">-</td>
+                <td className="text-gray-300 py-4 px-4 text-center">Workflow Integration</td>
+                <td className="text-gray-300 py-4 px-4 text-center">Go-Live</td>
+                <td className="text-red-400 py-4 px-4 text-center font-semibold">High</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
