@@ -3,15 +3,24 @@ import { AlertTriangle, CheckCircle, Eye } from 'lucide-react';
 
 export const FalsePositiveDetection: React.FC = () => {
   return (
-    <div className="space-y-8 mt-8">
-      {/* Main Header */}
-      <div className="text-left">
-        <h2 className="text-white text-4xl font-bold mb-2">False Positive Detection</h2>
-        <p className="text-gray-300 text-xl">Preventing the 'Talent Shortage' Misdiagnosis</p>
-      </div>
+    <section className="shadow-[0_10px_15px_-3px_rgba(0,0,0,0.10),0_4px_6px_-4px_rgba(0,0,0,0.10)] bg-[#282A27] min-h-[600px] w-full overflow-hidden gap-6 mt-6 p-8 rounded-[20px] max-md:max-w-full max-md:px-5">
+      <header className="w-full text-white gap-2 max-md:max-w-full">
+        <div className="w-full text-2xl font-bold leading-none max-md:max-w-full">
+          <h2 className="text-2xl font-bold leading-8 max-md:max-w-full">
+            False Positive Detection
+          </h2>
+        </div>
+        <div className="w-full text-lg font-normal leading-loose mt-2 max-md:max-w-full">
+          <div className="text-lg font-normal leading-7 max-md:max-w-full">
+            Preventing the 'Talent Shortage' Misdiagnosis
+          </div>
+        </div>
+      </header>
+      
+      <div className="w-full gap-6 mt-6 max-md:max-w-full">
 
-      {/* Month 11: Predicted Crisis Point */}
-      <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
+        {/* Month 11: Predicted Crisis Point */}
+        <article className="items-stretch border border-gray-400 flex w-full flex-col justify-center p-[26px] rounded-[20px] border-solid max-md:max-w-full max-md:px-5">
         <div className="flex items-start gap-4">
           <div className="w-12 h-12 bg-[#FFAD28] rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
             <Eye className="w-7 h-7 text-black" />
@@ -20,13 +29,13 @@ export const FalsePositiveDetection: React.FC = () => {
             <h3 className="text-white text-2xl font-bold mb-2">Month 11: Predicted Crisis Point</h3>
             <p className="text-gray-300 text-lg">Simulation correctly predicts "talent shortage" false positive during SAP integration</p>
           </div>
-        </div>
-      </div>
+          </div>
+        </article>
 
-      {/* Two Column Comparison */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Surface Symptoms (What Teams See) */}
-        <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
+        {/* Two Column Comparison */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+          {/* Surface Symptoms (What Teams See) */}
+          <article className="border border-gray-400 shadow-[0_10px_15px_-3px_rgba(0,0,0,0.10),0_4px_6px_-4px_rgba(0,0,0,0.10)] bg-[#4A4C4D] w-full overflow-hidden gap-6 p-[34px] rounded-[20px] border-solid max-md:max-w-full max-md:px-5">
           <div className="flex items-center gap-3 mb-6">
             <AlertTriangle className="w-6 h-6 text-red-400" />
             <h3 className="text-white text-xl font-bold">Surface Symptoms (What Teams See)</h3>
@@ -56,11 +65,11 @@ export const FalsePositiveDetection: React.FC = () => {
                 <p className="text-gray-400 text-sm">Project leadership requesting 6-month delay</p>
               </div>
             </div>
-          </div>
-        </div>
+            </div>
+          </article>
 
-        {/* Intelligence Spine Reality */}
-        <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
+          {/* Intelligence Spine Reality */}
+          <article className="border border-gray-400 shadow-[0_10px_15px_-3px_rgba(0,0,0,0.10),0_4px_6px_-4px_rgba(0,0,0,0.10)] bg-[#4A4C4D] w-full overflow-hidden gap-6 p-[34px] rounded-[20px] border-solid max-md:max-w-full max-md:px-5">
           <div className="flex items-center gap-3 mb-6">
             <CheckCircle className="w-6 h-6 text-green-400" />
             <h3 className="text-white text-xl font-bold">Intelligence Spine Reality</h3>
@@ -90,12 +99,12 @@ export const FalsePositiveDetection: React.FC = () => {
                 <p className="text-gray-400 text-sm">Healthcare-native agents in agent playground</p>
               </div>
             </div>
-          </div>
+            </div>
+          </article>
         </div>
-      </div>
 
-      {/* False Positive Pattern Recognition */}
-      <div className="bg-[rgba(40,42,39,1)] p-8 rounded-[20px] border border-[rgba(112,112,112,1)]">
+        {/* False Positive Pattern Recognition */}
+        <article className="border border-gray-400 shadow-[0_10px_15px_-3px_rgba(0,0,0,0.10),0_4px_6px_-4px_rgba(0,0,0,0.10)] bg-[#4A4C4D] w-full overflow-hidden gap-6 mt-6 p-[34px] rounded-[20px] border-solid max-md:max-w-full max-md:px-5">
         <h3 className="text-white text-2xl font-bold mb-8 text-center">False Positive Pattern Recognition</h3>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -122,7 +131,8 @@ export const FalsePositiveDetection: React.FC = () => {
           <h4 className="text-black font-bold text-xl mb-3">Key Insight:</h4>
           <p className="text-black text-lg">What appears as "talent shortage" is usually architectural mismatch. Intelligence Spine prevents expensive misallocation of resources.</p>
         </div>
+        </article>
       </div>
-    </div>
+    </section>
   );
 };
